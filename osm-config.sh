@@ -17,8 +17,8 @@ log "starting osm-config.sh"
 
 # these will only be set if they aren't already set
 : ${NPROCS:=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1)}
-: ${OSM_PBF_URL:="http://download.geofabrik.de/australia-oceania/australia-latest.osm.pbf"}
-: ${OSM_PBF_UPDATE_URL:="http://download.geofabrik.de/australia-oceania/australia-updates"}
+: ${OSM_PBF_URL:="http://download.geofabrik.de/europe/austria-latest.osm.pbf"}
+: ${OSM_PBF_UPDATE_URL:="http://download.geofabrik.de/europe/austria-updates"}
 : ${OSM_PBF:=$(basename "$OSM_PBF_URL")}
 : ${OSM_PBF_BASENAME:=$(basename "$OSM_PBF" .osm.pbf)}
 : ${OSM_OSRM:="$OSM_PBF_BASENAME".osrm}
